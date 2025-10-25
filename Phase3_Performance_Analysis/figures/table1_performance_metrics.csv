@@ -1,0 +1,17 @@
+DVFS,Workload,IPC,Power (mW),Energy/Inst (µJ),I-Cache Hit,D-Cache Hit
+0.6V/50MHz,Healthcare Monitor Test,0.555,102.9,3.7081,95.0%,95.7%
+0.6V/50MHz,Intensive Ecg Processing,0.519,96.4,3.7156,95.7%,95.4%
+0.6V/50MHz,Mixed Workload,0.526,97.7,3.7140,95.4%,94.1%
+0.6V/50MHz,Stress Test,0.593,109.8,3.7012,94.2%,95.8%
+0.8V/200MHz,Healthcare Monitor Test,0.593,763.7,6.4337,94.8%,96.1%
+0.8V/200MHz,Intensive Ecg Processing,0.560,721.0,6.4357,94.8%,97.0%
+0.8V/200MHz,Mixed Workload,0.597,767.6,6.4335,94.2%,96.5%
+0.8V/200MHz,Stress Test,0.657,845.1,6.4304,95.9%,95.5%
+1.0V/600MHz,Healthcare Monitor Test,0.764,4591.8,10.0109,95.8%,95.5%
+1.0V/600MHz,Intensive Ecg Processing,0.740,4443.7,10.0113,96.9%,96.5%
+1.0V/600MHz,Mixed Workload,0.795,4776.4,10.0105,96.3%,96.6%
+1.0V/600MHz,Stress Test,0.823,4945.4,10.0101,94.7%,95.5%
+1.2V/800MHz,Healthcare Monitor Test,0.877,10109.5,14.4086,95.0%,96.1%
+1.2V/800MHz,Intensive Ecg Processing,0.809,9326.9,14.4093,94.1%,94.3%
+1.2V/800MHz,Mixed Workload,0.852,9819.2,14.4088,94.8%,94.9%
+1.2V/800MHz,Stress Test,0.937,10802.8,14.4080,96.4%,95.8%

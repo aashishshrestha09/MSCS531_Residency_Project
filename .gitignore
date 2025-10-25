@@ -36,6 +36,12 @@ __pycache__/
 *$py.class
 *.so
 
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv/
+
 # Jupyter Notebook
 .ipynb_checkpoints
 

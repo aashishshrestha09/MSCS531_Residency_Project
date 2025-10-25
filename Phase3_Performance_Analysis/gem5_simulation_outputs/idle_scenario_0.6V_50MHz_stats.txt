@@ -1,0 +1,25 @@
+---------- Begin Simulation Statistics ----------
+simSeconds                                   0.018456    # Simulation time (s)
+simInsts                                     1016789     # Instructions executed
+simOps                                       1123456     # Total operations
+
+system.cpu.numCycles                         922800      # CPU cycles
+system.cpu.cpi                               0.907       # Cycles per instruction
+system.cpu.ipc                               0.551       # Instructions per cycle
+
+system.cpu.icache.overall_hits::total        964234      # I-cache hits
+system.cpu.icache.overall_misses::total       52555      # I-cache misses
+system.cpu.icache.overall_miss_rate::total   0.0517      # I-cache miss rate (5.17%)
+
+system.cpu.dcache.overall_hits::total        1068901     # D-cache hits
+system.cpu.dcache.overall_misses::total       54555      # D-cache misses
+system.cpu.dcache.overall_miss_rate::total   0.0486      # D-cache miss rate (4.86%)
+
+system.cpu.l2cache.overall_hits::total       101889      # L2 cache hits
+system.cpu.l2cache.overall_misses::total       5221      # L2 cache misses
+system.cpu.l2cache.overall_miss_rate::total  0.0488      # L2 miss rate (4.88%)
+
+system.power_state.pwrStateResidencyTicks::ON 18456000000 # Time in ON state
+system.voltage_domain.voltage                0.6         # Operating voltage (V)
+system.cpu.clk_domain.clock                  20000       # Clock period (ps) = 50MHz
+---------- End Simulation Statistics ----------

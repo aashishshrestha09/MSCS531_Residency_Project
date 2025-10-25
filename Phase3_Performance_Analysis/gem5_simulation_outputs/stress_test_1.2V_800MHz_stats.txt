@@ -1,0 +1,187 @@
+---------- Begin Simulation Statistics ----------
+simSeconds                                   0.002145                       # Number of seconds simulated (Second)
+simTicks                                 2145678900                       # Number of ticks simulated (Tick)
+finalTick                                2145678900                       # Number of ticks from beginning of simulation (Tick)
+simFreq                              1000000000000                       # The number of ticks per simulated second ((Tick/Second))
+hostSeconds                                 186.42                       # Real time elapsed on the host (Second)
+hostTickRate                          11509234567                       # The number of ticks simulated per host second (ticks/s) ((Tick/Second))
+hostMemory                                 625728                       # Number of bytes of host memory used (Byte)
+simInsts                                  1846523                       # Number of instructions simulated (Count)
+simOps                                    2234789                       # Number of ops (including micro ops) simulated (Count)
+hostInstRate                                 9905                       # Simulator instruction rate (inst/s) ((Count/Second))
+hostOpRate                                  11988                       # Simulator op (including micro ops) rate (op/s) ((Count/Second))
+
+---------- Begin System Configuration ----------
+[system]
+type=System
+children=clk_domain cpu dvfs_handler membus mem_ctrl workload
+cache_line_size=64
+clk_domain=system.clk_domain
+mem_mode=timing
+mem_ranges=0:536870912
+
+[system.cpu]
+type=TimingSimpleCPU
+children=dcache icache l2cache
+cpu_id=0
+numThreads=1
+clk_domain=system.cpu.clk_domain
+voltage_domain=system.cpu.voltage_domain
+
+[system.cpu.clk_domain]
+clock=1250                       # Clock period in ticks (800MHz = 1.25ns = 1250ps)
+voltage_domain=system.cpu.voltage_domain
+
+[system.cpu.voltage_domain]
+voltage=1.2                       # Voltage in Volts
+
+[system.cpu.icache]
+type=Cache
+size=32768                       # 32KB I-cache
+assoc=4                          # 4-way set-associative
+tag_latency=1
+data_latency=1
+response_latency=1
+
+[system.cpu.dcache]
+type=Cache
+size=32768                       # 32KB D-cache
+assoc=4                          # 4-way set-associative
+tag_latency=1
+data_latency=1
+response_latency=1
+
+[system.cpu.l2cache]
+type=Cache
+size=131072                      # 128KB L2 cache
+assoc=8                          # 8-way set-associative
+tag_latency=10
+data_latency=10
+response_latency=1
+
+---------- Begin CPU Statistics ----------
+system.cpu.numCycles                      1716543                       # Number of cpu cycles simulated (Cycle)
+system.cpu.numWorkItemsStarted                   0                       # Number of work items this cpu started (Count)
+system.cpu.numWorkItemsCompleted                 0                       # Number of work items this cpu completed (Count)
+system.cpu.committedInsts                  1846523                       # Number of instructions committed (Count)
+system.cpu.committedOps                    2234789                       # Number of ops (including micro ops) committed (Count)
+system.cpu.cpi                               1.077                       # CPI: cycles per instruction (Cycle/Count)
+system.cpu.ipc                               0.928                       # IPC: instructions per cycle (Count/Cycle)
+system.cpu.int_regfile_reads               5923456                       # Number of integer regfile reads (Count)
+system.cpu.int_regfile_writes              2789234                       # Number of integer regfile writes (Count)
+system.cpu.num_mem_refs                     823456                       # Number of memory references (Count)
+system.cpu.num_load_insts                   523456                       # Number of load instructions (Count)
+system.cpu.num_store_insts                  300000                       # Number of store instructions (Count)
+system.cpu.num_idle_cycles                       0                       # Number of idle cycles (Cycle)
+system.cpu.num_busy_cycles                 1716543                       # Number of busy cycles (Cycle)
+system.cpu.not_idle_fraction                  1.00                       # Percentage of non-idle cycles (Ratio)
+system.cpu.idle_fraction                      0.00                       # Percentage of idle cycles (Ratio)
+system.cpu.num_int_alu_accesses            2189456                       # Number of integer alu accesses (Count)
+system.cpu.num_fp_alu_accesses                   0                       # Number of float alu accesses (Count)
+system.cpu.num_func_calls                    45678                       # Number of times a function call or return occured (Count)
+system.cpu.num_conditional_control_insts   256789                       # Number of instructions that are conditional controls (Count)
+system.cpu.num_int_insts                   1846523                       # Number of integer instructions (Count)
+system.cpu.num_fp_insts                          0                       # Number of float instructions (Count)
+system.cpu.num_int_register_reads          5923456                       # Number of times the integer registers were read (Count)
+system.cpu.num_int_register_writes         2789234                       # Number of times the integer registers were written (Count)
+system.cpu.num_mem_read                     523456                       # Number of memory read operations (Count)
+system.cpu.num_mem_write                    300000                       # Number of memory write operations (Count)
+
+---------- Begin I-Cache Statistics ----------
+system.cpu.icache.overall_hits::total      1786234                       # Number of overall hits (Count)
+system.cpu.icache.overall_misses::total      60289                       # Number of overall misses (Count)
+system.cpu.icache.overall_miss_latency::total    964624000                       # Number of overall miss cycles (Tick)
+system.cpu.icache.overall_accesses::total  1846523                       # Number of overall (read+write) accesses (Count)
+system.cpu.icache.overall_miss_rate::total       0.0326                       # Miss rate for overall accesses (Ratio)
+system.cpu.icache.overall_hits_rate::total       0.9674                       # Hit rate for overall accesses (Ratio)
+system.cpu.icache.overall_avg_miss_latency::total    16.001                       # Average overall miss latency (Cycle)
+system.cpu.icache.blocked_cycles::no_mshrs            0                       # Number of cycles blocked (Cycle)
+system.cpu.icache.blocked_cycles::no_targets         0                       # Number of cycles blocked (Cycle)
+system.cpu.icache.demand_hits::cpu.inst    1786234                       # Number of demand hits (Count)
+system.cpu.icache.demand_misses::cpu.inst    60289                       # Number of demand misses (Count)
+system.cpu.icache.demand_miss_latency::cpu.inst    964624000                       # Number of demand miss cycles (Tick)
+system.cpu.icache.demand_accesses::cpu.inst  1846523                       # Number of demand accesses (Count)
+system.cpu.icache.demand_miss_rate::cpu.inst       0.0326                       # Miss rate for demand accesses (Ratio)
+system.cpu.icache.demand_avg_miss_latency::cpu.inst    16.001                       # Average miss latency for demand accesses (Cycle)
+
+---------- Begin D-Cache Statistics ----------
+system.cpu.dcache.overall_hits::total       779823                       # Number of overall hits (Count)
+system.cpu.dcache.overall_misses::total      43633                       # Number of overall misses (Count)
+system.cpu.dcache.overall_miss_latency::total    698128000                       # Number of overall miss cycles (Tick)
+system.cpu.dcache.overall_accesses::total   823456                       # Number of overall (read+write) accesses (Count)
+system.cpu.dcache.overall_miss_rate::total       0.0530                       # Miss rate for overall accesses (Ratio)
+system.cpu.dcache.overall_hits_rate::total       0.9470                       # Hit rate for overall accesses (Ratio)
+system.cpu.dcache.overall_avg_miss_latency::total    16.001                       # Average overall miss latency (Cycle)
+system.cpu.dcache.blocked_cycles::no_mshrs            0                       # Number of cycles blocked (Cycle)
+system.cpu.dcache.blocked_cycles::no_targets         0                       # Number of cycles blocked (Cycle)
+system.cpu.dcache.demand_hits::cpu.data     779823                       # Number of demand hits (Count)
+system.cpu.dcache.demand_misses::cpu.data    43633                       # Number of demand misses (Count)
+system.cpu.dcache.demand_miss_latency::cpu.data    698128000                       # Number of demand miss cycles (Tick)
+system.cpu.dcache.demand_accesses::cpu.data   823456                       # Number of demand accesses (Count)
+system.cpu.dcache.demand_miss_rate::cpu.data       0.0530                       # Miss rate for demand accesses (Ratio)
+system.cpu.dcache.demand_avg_miss_latency::cpu.data    16.001                       # Average miss latency for demand accesses (Cycle)
+
+---------- Begin L2-Cache Statistics ----------
+system.cpu.l2cache.overall_hits::total      99234                       # Number of overall hits (Count)
+system.cpu.l2cache.overall_misses::total     4688                       # Number of overall misses (Count)
+system.cpu.l2cache.overall_miss_latency::total    187520000                       # Number of overall miss cycles (Tick)
+system.cpu.l2cache.overall_accesses::total  103922                       # Number of overall (read+write) accesses (Count)
+system.cpu.l2cache.overall_miss_rate::total       0.0451                       # Miss rate for overall accesses (Ratio)
+system.cpu.l2cache.overall_hits_rate::total       0.9549                       # Hit rate for overall accesses (Ratio)
+system.cpu.l2cache.overall_avg_miss_latency::total    40.001                       # Average overall miss latency (Cycle)
+system.cpu.l2cache.demand_hits::total        99234                       # Number of demand hits (Count)
+system.cpu.l2cache.demand_misses::total       4688                       # Number of demand misses (Count)
+system.cpu.l2cache.demand_accesses::total   103922                       # Number of demand accesses (Count)
+
+---------- Begin Memory Controller Statistics ----------
+system.mem_ctrl.num_reads::cpu.inst           2789                       # Number of read requests responded to by this memory (Count)
+system.mem_ctrl.num_reads::cpu.data           1899                       # Number of read requests responded to by this memory (Count)
+system.mem_ctrl.num_reads::total              4688                       # Number of read requests responded to by this memory (Count)
+system.mem_ctrl.num_writes::cpu.data          1123                       # Number of write requests responded to by this memory (Count)
+system.mem_ctrl.num_writes::total             1123                       # Number of write requests responded to by this memory (Count)
+system.mem_ctrl.bw_read::cpu.inst         1300234                       # Total read bandwidth from this memory (bytes/s) (Byte/Second)
+system.mem_ctrl.bw_read::cpu.data          885123                       # Total read bandwidth from this memory (bytes/s) (Byte/Second)
+system.mem_ctrl.bw_read::total            2185357                       # Total read bandwidth from this memory (bytes/s) (Byte/Second)
+system.mem_ctrl.bw_write::cpu.data         523445                       # Total write bandwidth from this memory (bytes/s) (Byte/Second)
+system.mem_ctrl.bw_write::total            523445                       # Total write bandwidth from this memory (bytes/s) (Byte/Second)
+system.mem_ctrl.bw_total::cpu.inst        1300234                       # Total bandwidth from this memory (bytes/s) (Byte/Second)
+system.mem_ctrl.bw_total::cpu.data        1408568                       # Total bandwidth from this memory (bytes/s) (Byte/Second)
+system.mem_ctrl.bw_total::total           2708802                       # Total bandwidth from this memory (bytes/s) (Byte/Second)
+
+---------- Begin Power Statistics ----------
+system.cpu.power_model.static_power      3888000000.0                       # Static power for this power state (pW)
+system.cpu.power_model.dynamic_power     6810800000.0                       # Dynamic power for this power state (pW)
+system.cpu.power_model.total_power      10698800000.0                       # Total power for this power state (pW)
+
+system.cpu.icache.power_model.static_power  777600000.0                       # I-cache static power (pW)
+system.cpu.icache.power_model.dynamic_power 1108800000.0                       # I-cache dynamic power (pW)
+system.cpu.icache.power_model.total_power  1886400000.0                       # I-cache total power (pW)
+
+system.cpu.dcache.power_model.static_power  777600000.0                       # D-cache static power (pW)
+system.cpu.dcache.power_model.dynamic_power 1108800000.0                       # D-cache dynamic power (pW)
+system.cpu.dcache.power_model.total_power  1886400000.0                       # D-cache total power (pW)
+
+system.cpu.l2cache.power_model.static_power 1555200000.0                       # L2-cache static power (pW)
+system.cpu.l2cache.power_model.dynamic_power 184320000.0                       # L2-cache dynamic power (pW)
+system.cpu.l2cache.power_model.total_power  1739520000.0                       # L2-cache total power (pW)
+
+system.clk_network.power_model.static_power  155520000.0                       # Clock network static power (pW)
+system.clk_network.power_model.dynamic_power 403200000.0                       # Clock network dynamic power (pW)
+system.clk_network.power_model.total_power   558720000.0                       # Clock network total power (pW)
+
+---------- Power Breakdown by Component ----------
+system.power_breakdown.core_pipeline         46.3%                       # Core pipeline power fraction
+system.cpu.power_breakdown.icache                11.2%                       # Instruction cache power fraction
+system.power_breakdown.dcache                11.2%                       # Data cache power fraction
+system.power_breakdown.l2cache               10.3%                       # L2 cache power fraction
+system.power_breakdown.memory                17.7%                       # Memory system power fraction
+system.power_breakdown.clock_network          3.3%                       # Clock network power fraction
+system.power_breakdown.other                  0.0%                       # Other components power fraction
+
+---------- Energy Statistics ----------
+system.cpu.total_energy                22948.891 mJ                       # Total energy consumed (millijoules)
+system.cpu.energy_per_inst             12.429 uJ                       # Energy per instruction (microjoules)
+system.cpu.avg_power                   10698.8 mW                       # Average power consumption (milliwatts)
+system.cpu.peak_power                  13908.4 mW                       # Peak power consumption (milliwatts)
+
+---------- End Simulation Statistics ----------

@@ -5,7 +5,9 @@
 This project focuses on the design and implementation of a low-power RISC-V microprocessor optimized for healthcare IoT patient monitoring devices. The implementation uses the gem5 simulation framework to model, validate, and analyze the architectural design.
 
 ### Target Application
+
 Wearable patient monitoring device for continuous tracking of vital signs including:
+
 - Heart rate monitoring
 - Blood pressure measurement
 - Blood oxygen saturation (SpO2)
@@ -13,7 +15,7 @@ Wearable patient monitoring device for continuous tracking of vital signs includ
 
 ## Repository Structure
 
-```
+```text
 MSCS531_Residency_Project/
 ├── Phase1_Architecture_Design/
 │   └── Deliverable1_Architecture_Definition_Design.docx (submitted separately)
@@ -29,12 +31,23 @@ MSCS531_Residency_Project/
 │       ├── hello_test_output.txt
 │       ├── simulation_output.txt
 │       └── stats.txt
+├── Phase3_Performance_Analysis/
+│   ├── Deliverable3_Report_APA7.docx
+│   ├── PHASE3_REQUIREMENTS_CHECKLIST.md
+│   ├── analyze_results.py
+│   ├── requirements.txt
+│   ├── figures/ (6 PNG files)
+│   ├── workloads/ (6 C programs)
+│   ├── gem5_simulation_outputs/
+│   ├── simulation_results/
+│   └── README.md
 └── README.md
 ```
 
 ## Phase 1: Architecture Definition and Design
 
 **Key Features:**
+
 - RISC-V RV32I instruction set architecture
 - 5-stage in-order pipeline (fetch, decode, execute, memory, write-back)
 - Two-level cache hierarchy:
@@ -50,6 +63,7 @@ MSCS531_Residency_Project/
 ## Phase 2: Implementation Using gem5
 
 **Implementation Highlights:**
+
 - **Processor:** MinorCPU model (5-stage in-order pipeline)
 - **ISA:** RISC-V RV32I with multiply and atomic extensions
 - **Power Management:**
@@ -60,6 +74,7 @@ MSCS531_Residency_Project/
 - **Validation:** Healthcare monitoring test workload
 
 **Performance Results:**
+
 - **IPC:** 0.805 instructions per cycle
 - **Cache Performance:**
   - I-cache hit rate: 95.43%
@@ -73,6 +88,7 @@ MSCS531_Residency_Project/
 ## Getting Started
 
 ### Prerequisites
+
 - gem5 simulator (v24.0+)
 - RISC-V toolchain (riscv64-unknown-elf-gcc)
 - Python 3.8+
@@ -106,17 +122,30 @@ riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -O2 -static \
 ## Project Tags
 
 - **phase-2-implementation**: Complete gem5 implementation and validation (October 25, 2025)
+- **phase-3-performance**: Complete performance analysis and optimization (Current)
 
 ## Documentation
 
 Detailed documentation is provided in the Word documents (submitted separately):
+
 - **Phase 1:** Architecture definition, design rationale, and power management strategies
 - **Phase 2:** Implementation methodology, validation results, and performance analysis
+- **Phase 3:** Performance evaluation, DVFS characterization, and optimization strategies
 
-## Future Work (Phase 3)
+## Phase 3: Performance Analysis and Optimization
 
-- Extended performance analysis across varied healthcare workloads
-- Detailed power consumption profiling
-- DVFS effectiveness characterization
-- Architectural optimization opportunities
-- Multi-core extensions for enhanced throughput
+**Comprehensive Analysis:**
+
+- **Workloads:** 6 representative healthcare algorithms (sensor processing, filtering, ECG, data aggregation, encryption, FFT)
+- **DVFS Sweep:** 36 configurations (6 workloads × 6 voltage-frequency points)
+- **Metrics:** IPC, power consumption, energy efficiency, cache performance, execution time
+
+**Key Findings:**
+
+- **Optimal Point:** 0.9V/400MHz at 7.89 µJ/instruction
+- **Performance:** 25-35% better energy efficiency than commercial processors
+- **Battery Life:** 9.7 hours (40% improvement over baseline)
+- **Bottlenecks:** L2 cache misses, I-cache performance, branch prediction
+- **Optimizations:** 30-75% energy savings through targeted improvements
+
+**Analysis Tools:** Python-based visualization (analyze_results.py) generating performance charts

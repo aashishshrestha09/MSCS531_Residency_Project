@@ -1,0 +1,722 @@
+[
+  {
+    "voltage": 0.6,
+    "frequency": 50,
+    "workload": "healthcare_monitor_test",
+    "metrics": {
+      "ipc": 0.555,
+      "cpi": 1.802,
+      "icache_hit_rate": 0.9503,
+      "dcache_hit_rate": 0.9573,
+      "l2_hit_rate": 0.9828,
+      "avg_power": 102.9,
+      "peak_power": 133.8,
+      "sim_time_ms": 952381.0,
+      "sim_cycles": 47619047,
+      "sim_insts": 26427944,
+      "sim_seconds": 952.380952,
+      "total_energy": 97997743.76,
+      "energy_per_inst": 3.7081
+    }
+  },
+  {
+    "voltage": 0.6,
+    "frequency": 50,
+    "workload": "intensive_ecg_processing",
+    "metrics": {
+      "ipc": 0.519,
+      "cpi": 1.927,
+      "icache_hit_rate": 0.9568,
+      "dcache_hit_rate": 0.9541,
+      "l2_hit_rate": 0.9874,
+      "avg_power": 96.4,
+      "peak_power": 125.3,
+      "sim_time_ms": 1020408.2,
+      "sim_cycles": 51020408,
+      "sim_insts": 26471130,
+      "sim_seconds": 1020.408163,
+      "total_energy": 98357295.76,
+      "energy_per_inst": 3.7156
+    }
+  },
+  {
+    "voltage": 0.6,
+    "frequency": 50,
+    "workload": "burst_transmission",
+    "metrics": {
+      "ipc": 0.549,
+      "cpi": 1.822,
+      "icache_hit_rate": 0.9465,
+      "dcache_hit_rate": 0.9454,
+      "l2_hit_rate": 0.9905,
+      "avg_power": 101.8,
+      "peak_power": 132.3,
+      "sim_time_ms": 980392.2,
+      "sim_cycles": 49019607,
+      "sim_insts": 26897206,
+      "sim_seconds": 980.392157,
+      "total_energy": 99771121.36,
+      "energy_per_inst": 3.7093
+    }
+  },
+  {
+    "voltage": 0.6,
+    "frequency": 50,
+    "workload": "mixed_workload",
+    "metrics": {
+      "ipc": 0.526,
+      "cpi": 1.9,
+      "icache_hit_rate": 0.9542,
+      "dcache_hit_rate": 0.941,
+      "l2_hit_rate": 0.9948,
+      "avg_power": 97.7,
+      "peak_power": 127.0,
+      "sim_time_ms": 952381.0,
+      "sim_cycles": 47619047,
+      "sim_insts": 25058094,
+      "sim_seconds": 952.380952,
+      "total_energy": 93066284.53,
+      "energy_per_inst": 3.714
+    }
+  },
+  {
+    "voltage": 0.6,
+    "frequency": 50,
+    "workload": "idle_scenario",
+    "metrics": {
+      "ipc": 0.277,
+      "cpi": 3.614,
+      "icache_hit_rate": 0.9352,
+      "dcache_hit_rate": 0.9354,
+      "l2_hit_rate": 0.9925,
+      "avg_power": 52.8,
+      "peak_power": 68.6,
+      "sim_time_ms": 1818181.8,
+      "sim_cycles": 90909090,
+      "sim_insts": 25155205,
+      "sim_seconds": 1818.181818,
+      "total_energy": 96013286.93,
+      "energy_per_inst": 3.8168
+    }
+  },
+  {
+    "voltage": 0.6,
+    "frequency": 50,
+    "workload": "stress_test",
+    "metrics": {
+      "ipc": 0.593,
+      "cpi": 1.686,
+      "icache_hit_rate": 0.9425,
+      "dcache_hit_rate": 0.9584,
+      "l2_hit_rate": 0.9907,
+      "avg_power": 109.8,
+      "peak_power": 142.7,
+      "sim_time_ms": 892857.1,
+      "sim_cycles": 44642857,
+      "sim_insts": 26477304,
+      "sim_seconds": 892.857143,
+      "total_energy": 97996867.17,
+      "energy_per_inst": 3.7012
+    }
+  },
+  {
+    "voltage": 0.7,
+    "frequency": 100,
+    "workload": "healthcare_monitor_test",
+    "metrics": {
+      "ipc": 0.574,
+      "cpi": 1.741,
+      "icache_hit_rate": 0.9597,
+      "dcache_hit_rate": 0.9636,
+      "l2_hit_rate": 0.9896,
+      "avg_power": 285.0,
+      "peak_power": 370.5,
+      "sim_time_ms": 476190.5,
+      "sim_cycles": 47619047,
+      "sim_insts": 27356766,
+      "sim_seconds": 476.190476,
+      "total_energy": 135714821.74,
+      "energy_per_inst": 4.9609
+    }
+  },
+  {
+    "voltage": 0.7,
+    "frequency": 100,
+    "workload": "intensive_ecg_processing",
+    "metrics": {
+      "ipc": 0.515,
+      "cpi": 1.943,
+      "icache_hit_rate": 0.9547,
+      "dcache_hit_rate": 0.9413,
+      "l2_hit_rate": 0.9872,
+      "avg_power": 255.6,
+      "peak_power": 332.3,
+      "sim_time_ms": 510204.1,
+      "sim_cycles": 51020408,
+      "sim_insts": 26254011,
+      "sim_seconds": 510.204082,
+      "total_energy": 130430372.4,
+      "energy_per_inst": 4.968
+    }
+  },
+  {
+    "voltage": 0.7,
+    "frequency": 100,
+    "workload": "burst_transmission",
+    "metrics": {
+      "ipc": 0.568,
+      "cpi": 1.761,
+      "icache_hit_rate": 0.9611,
+      "dcache_hit_rate": 0.9562,
+      "l2_hit_rate": 0.9907,
+      "avg_power": 281.7,
+      "peak_power": 366.2,
+      "sim_time_ms": 490196.1,
+      "sim_cycles": 49019607,
+      "sim_insts": 27834191,
+      "sim_seconds": 490.196078,
+      "total_energy": 138103223.0,
+      "energy_per_inst": 4.9616
+    }
+  },
+  {
+    "voltage": 0.7,
+    "frequency": 100,
+    "workload": "mixed_workload",
+    "metrics": {
+      "ipc": 0.575,
+      "cpi": 1.74,
+      "icache_hit_rate": 0.9499,
+      "dcache_hit_rate": 0.9647,
+      "l2_hit_rate": 0.9802,
+      "avg_power": 285.1,
+      "peak_power": 370.7,
+      "sim_time_ms": 476190.5,
+      "sim_cycles": 47619047,
+      "sim_insts": 27368289,
+      "sim_seconds": 476.190476,
+      "total_energy": 135771284.76,
+      "energy_per_inst": 4.9609
+    }
+  },
+  {
+    "voltage": 0.7,
+    "frequency": 100,
+    "workload": "idle_scenario",
+    "metrics": {
+      "ipc": 0.315,
+      "cpi": 3.174,
+      "icache_hit_rate": 0.9217,
+      "dcache_hit_rate": 0.9456,
+      "l2_hit_rate": 0.9933,
+      "avg_power": 157.9,
+      "peak_power": 205.3,
+      "sim_time_ms": 909090.9,
+      "sim_cycles": 90909090,
+      "sim_insts": 28643191,
+      "sim_seconds": 909.090909,
+      "total_energy": 143533455.13,
+      "energy_per_inst": 5.0111
+    }
+  },
+  {
+    "voltage": 0.7,
+    "frequency": 100,
+    "workload": "stress_test",
+    "metrics": {
+      "ipc": 0.619,
+      "cpi": 1.616,
+      "icache_hit_rate": 0.9519,
+      "dcache_hit_rate": 0.97,
+      "l2_hit_rate": 0.9937,
+      "avg_power": 306.7,
+      "peak_power": 398.7,
+      "sim_time_ms": 446428.6,
+      "sim_cycles": 44642857,
+      "sim_insts": 27625288,
+      "sim_seconds": 446.428571,
+      "total_energy": 136926412.4,
+      "energy_per_inst": 4.9566
+    }
+  },
+  {
+    "voltage": 0.8,
+    "frequency": 200,
+    "workload": "healthcare_monitor_test",
+    "metrics": {
+      "ipc": 0.593,
+      "cpi": 1.685,
+      "icache_hit_rate": 0.9484,
+      "dcache_hit_rate": 0.9609,
+      "l2_hit_rate": 0.9833,
+      "avg_power": 763.7,
+      "peak_power": 992.8,
+      "sim_time_ms": 238095.2,
+      "sim_cycles": 47619047,
+      "sim_insts": 28261698,
+      "sim_seconds": 238.095238,
+      "total_energy": 181827252.0,
+      "energy_per_inst": 6.4337
+    }
+  },
+  {
+    "voltage": 0.8,
+    "frequency": 200,
+    "workload": "intensive_ecg_processing",
+    "metrics": {
+      "ipc": 0.56,
+      "cpi": 1.785,
+      "icache_hit_rate": 0.9484,
+      "dcache_hit_rate": 0.9695,
+      "l2_hit_rate": 0.9831,
+      "avg_power": 721.0,
+      "peak_power": 937.3,
+      "sim_time_ms": 255102.0,
+      "sim_cycles": 51020408,
+      "sim_insts": 28578977,
+      "sim_seconds": 255.102041,
+      "total_energy": 183925863.09,
+      "energy_per_inst": 6.4357
+    }
+  },
+  {
+    "voltage": 0.8,
+    "frequency": 200,
+    "workload": "burst_transmission",
+    "metrics": {
+      "ipc": 0.583,
+      "cpi": 1.716,
+      "icache_hit_rate": 0.9445,
+      "dcache_hit_rate": 0.9596,
+      "l2_hit_rate": 0.9881,
+      "avg_power": 749.7,
+      "peak_power": 974.6,
+      "sim_time_ms": 245098.0,
+      "sim_cycles": 49019607,
+      "sim_insts": 28558442,
+      "sim_seconds": 245.098039,
+      "total_energy": 183754423.29,
+      "energy_per_inst": 6.4343
+    }
+  },
+  {
+    "voltage": 0.8,
+    "frequency": 200,
+    "workload": "mixed_workload",
+    "metrics": {
+      "ipc": 0.597,
+      "cpi": 1.676,
+      "icache_hit_rate": 0.9419,
+      "dcache_hit_rate": 0.9647,
+      "l2_hit_rate": 0.9908,
+      "avg_power": 767.6,
+      "peak_power": 997.9,
+      "sim_time_ms": 238095.2,
+      "sim_cycles": 47619047,
+      "sim_insts": 28407925,
+      "sim_seconds": 238.095238,
+      "total_energy": 182763101.45,
+      "energy_per_inst": 6.4335
+    }
+  },
+  {
+    "voltage": 0.8,
+    "frequency": 200,
+    "workload": "idle_scenario",
+    "metrics": {
+      "ipc": 0.334,
+      "cpi": 2.99,
+      "icache_hit_rate": 0.9329,
+      "dcache_hit_rate": 0.932,
+      "l2_hit_rate": 0.9941,
+      "avg_power": 432.1,
+      "peak_power": 561.8,
+      "sim_time_ms": 454545.5,
+      "sim_cycles": 90909090,
+      "sim_insts": 30406390,
+      "sim_seconds": 454.545455,
+      "total_energy": 196419078.4,
+      "energy_per_inst": 6.4598
+    }
+  },
+  {
+    "voltage": 0.8,
+    "frequency": 200,
+    "workload": "stress_test",
+    "metrics": {
+      "ipc": 0.657,
+      "cpi": 1.522,
+      "icache_hit_rate": 0.9593,
+      "dcache_hit_rate": 0.9545,
+      "l2_hit_rate": 0.9837,
+      "avg_power": 845.1,
+      "peak_power": 1098.6,
+      "sim_time_ms": 223214.3,
+      "sim_cycles": 44642857,
+      "sim_insts": 29333567,
+      "sim_seconds": 223.214286,
+      "total_energy": 188627689.34,
+      "energy_per_inst": 6.4304
+    }
+  },
+  {
+    "voltage": 0.9,
+    "frequency": 400,
+    "workload": "healthcare_monitor_test",
+    "metrics": {
+      "ipc": 0.682,
+      "cpi": 1.466,
+      "icache_hit_rate": 0.9696,
+      "dcache_hit_rate": 0.9579,
+      "l2_hit_rate": 0.9889,
+      "avg_power": 2215.2,
+      "peak_power": 2879.7,
+      "sim_time_ms": 119047.6,
+      "sim_cycles": 47619047,
+      "sim_insts": 32490707,
+      "sim_seconds": 119.047619,
+      "total_energy": 263710442.15,
+      "energy_per_inst": 8.1165
+    }
+  },
+  {
+    "voltage": 0.9,
+    "frequency": 400,
+    "workload": "intensive_ecg_processing",
+    "metrics": {
+      "ipc": 0.64,
+      "cpi": 1.562,
+      "icache_hit_rate": 0.9401,
+      "dcache_hit_rate": 0.9446,
+      "l2_hit_rate": 0.9876,
+      "avg_power": 2078.8,
+      "peak_power": 2702.5,
+      "sim_time_ms": 127551.0,
+      "sim_cycles": 51020408,
+      "sim_insts": 32664302,
+      "sim_seconds": 127.55102,
+      "total_energy": 265154826.42,
+      "energy_per_inst": 8.1176
+    }
+  },
+  {
+    "voltage": 0.9,
+    "frequency": 400,
+    "workload": "burst_transmission",
+    "metrics": {
+      "ipc": 0.654,
+      "cpi": 1.529,
+      "icache_hit_rate": 0.962,
+      "dcache_hit_rate": 0.9638,
+      "l2_hit_rate": 0.9927,
+      "avg_power": 2123.5,
+      "peak_power": 2760.5,
+      "sim_time_ms": 122549.0,
+      "sim_cycles": 49019607,
+      "sim_insts": 32059320,
+      "sim_seconds": 122.54902,
+      "total_energy": 260231966.66,
+      "energy_per_inst": 8.1172
+    }
+  },
+  {
+    "voltage": 0.9,
+    "frequency": 400,
+    "workload": "mixed_workload",
+    "metrics": {
+      "ipc": 0.706,
+      "cpi": 1.416,
+      "icache_hit_rate": 0.9591,
+      "dcache_hit_rate": 0.9415,
+      "l2_hit_rate": 0.9816,
+      "avg_power": 2293.4,
+      "peak_power": 2981.4,
+      "sim_time_ms": 119047.6,
+      "sim_cycles": 47619047,
+      "sim_insts": 33639848,
+      "sim_seconds": 119.047619,
+      "total_energy": 273018483.47,
+      "energy_per_inst": 8.1159
+    }
+  },
+  {
+    "voltage": 0.9,
+    "frequency": 400,
+    "workload": "idle_scenario",
+    "metrics": {
+      "ipc": 0.371,
+      "cpi": 2.693,
+      "icache_hit_rate": 0.9281,
+      "dcache_hit_rate": 0.9415,
+      "l2_hit_rate": 0.9839,
+      "avg_power": 1207.5,
+      "peak_power": 1569.7,
+      "sim_time_ms": 227272.7,
+      "sim_cycles": 90909090,
+      "sim_insts": 33754198,
+      "sim_seconds": 227.272727,
+      "total_energy": 274431738.68,
+      "energy_per_inst": 8.1303
+    }
+  },
+  {
+    "voltage": 0.9,
+    "frequency": 400,
+    "workload": "stress_test",
+    "metrics": {
+      "ipc": 0.725,
+      "cpi": 1.378,
+      "icache_hit_rate": 0.9568,
+      "dcache_hit_rate": 0.9543,
+      "l2_hit_rate": 0.9902,
+      "avg_power": 2355.1,
+      "peak_power": 3061.6,
+      "sim_time_ms": 111607.1,
+      "sim_cycles": 44642857,
+      "sim_insts": 32387435,
+      "sim_seconds": 111.607143,
+      "total_energy": 262840455.7,
+      "energy_per_inst": 8.1155
+    }
+  },
+  {
+    "voltage": 1.0,
+    "frequency": 600,
+    "workload": "healthcare_monitor_test",
+    "metrics": {
+      "ipc": 0.764,
+      "cpi": 1.308,
+      "icache_hit_rate": 0.9576,
+      "dcache_hit_rate": 0.9545,
+      "l2_hit_rate": 0.9812,
+      "avg_power": 4591.8,
+      "peak_power": 5969.3,
+      "sim_time_ms": 79365.1,
+      "sim_cycles": 47619047,
+      "sim_insts": 36402779,
+      "sim_seconds": 79.365079,
+      "total_energy": 364424619.66,
+      "energy_per_inst": 10.0109
+    }
+  },
+  {
+    "voltage": 1.0,
+    "frequency": 600,
+    "workload": "intensive_ecg_processing",
+    "metrics": {
+      "ipc": 0.74,
+      "cpi": 1.352,
+      "icache_hit_rate": 0.9692,
+      "dcache_hit_rate": 0.9645,
+      "l2_hit_rate": 0.9817,
+      "avg_power": 4443.7,
+      "peak_power": 5776.8,
+      "sim_time_ms": 85034.0,
+      "sim_cycles": 51020408,
+      "sim_insts": 37743666,
+      "sim_seconds": 85.034014,
+      "total_energy": 377861832.03,
+      "energy_per_inst": 10.0113
+    }
+  },
+  {
+    "voltage": 1.0,
+    "frequency": 600,
+    "workload": "burst_transmission",
+    "metrics": {
+      "ipc": 0.772,
+      "cpi": 1.296,
+      "icache_hit_rate": 0.9514,
+      "dcache_hit_rate": 0.965,
+      "l2_hit_rate": 0.9933,
+      "avg_power": 4635.1,
+      "peak_power": 6025.6,
+      "sim_time_ms": 81699.3,
+      "sim_cycles": 49019607,
+      "sim_insts": 37827294,
+      "sim_seconds": 81.699346,
+      "total_energy": 378681440.4,
+      "energy_per_inst": 10.0108
+    }
+  },
+  {
+    "voltage": 1.0,
+    "frequency": 600,
+    "workload": "mixed_workload",
+    "metrics": {
+      "ipc": 0.795,
+      "cpi": 1.257,
+      "icache_hit_rate": 0.963,
+      "dcache_hit_rate": 0.9664,
+      "l2_hit_rate": 0.9891,
+      "avg_power": 4776.4,
+      "peak_power": 6209.4,
+      "sim_time_ms": 79365.1,
+      "sim_cycles": 47619047,
+      "sim_insts": 37868501,
+      "sim_seconds": 79.365079,
+      "total_energy": 379081839.64,
+      "energy_per_inst": 10.0105
+    }
+  },
+  {
+    "voltage": 1.0,
+    "frequency": 600,
+    "workload": "idle_scenario",
+    "metrics": {
+      "ipc": 0.418,
+      "cpi": 2.392,
+      "icache_hit_rate": 0.9386,
+      "dcache_hit_rate": 0.9498,
+      "l2_hit_rate": 0.9901,
+      "avg_power": 2513.7,
+      "peak_power": 3267.9,
+      "sim_time_ms": 151515.2,
+      "sim_cycles": 90909090,
+      "sim_insts": 38011199,
+      "sim_seconds": 151.515152,
+      "total_energy": 380869575.6,
+      "energy_per_inst": 10.0199
+    }
+  },
+  {
+    "voltage": 1.0,
+    "frequency": 600,
+    "workload": "stress_test",
+    "metrics": {
+      "ipc": 0.823,
+      "cpi": 1.214,
+      "icache_hit_rate": 0.9472,
+      "dcache_hit_rate": 0.9552,
+      "l2_hit_rate": 0.9935,
+      "avg_power": 4945.4,
+      "peak_power": 6429.0,
+      "sim_time_ms": 74404.8,
+      "sim_cycles": 44642857,
+      "sim_insts": 36758695,
+      "sim_seconds": 74.404762,
+      "total_energy": 367958978.35,
+      "energy_per_inst": 10.0101
+    }
+  },
+  {
+    "voltage": 1.2,
+    "frequency": 800,
+    "workload": "healthcare_monitor_test",
+    "metrics": {
+      "ipc": 0.877,
+      "cpi": 1.14,
+      "icache_hit_rate": 0.9505,
+      "dcache_hit_rate": 0.961,
+      "l2_hit_rate": 0.9889,
+      "avg_power": 10109.5,
+      "peak_power": 13142.4,
+      "sim_time_ms": 59523.8,
+      "sim_cycles": 47619047,
+      "sim_insts": 41763870,
+      "sim_seconds": 59.52381,
+      "total_energy": 601756874.41,
+      "energy_per_inst": 14.4086
+    }
+  },
+  {
+    "voltage": 1.2,
+    "frequency": 800,
+    "workload": "intensive_ecg_processing",
+    "metrics": {
+      "ipc": 0.809,
+      "cpi": 1.236,
+      "icache_hit_rate": 0.9406,
+      "dcache_hit_rate": 0.9426,
+      "l2_hit_rate": 0.9936,
+      "avg_power": 9326.9,
+      "peak_power": 12125.0,
+      "sim_time_ms": 63775.5,
+      "sim_cycles": 51020408,
+      "sim_insts": 41281117,
+      "sim_seconds": 63.77551,
+      "total_energy": 594830741.89,
+      "energy_per_inst": 14.4093
+    }
+  },
+  {
+    "voltage": 1.2,
+    "frequency": 800,
+    "workload": "burst_transmission",
+    "metrics": {
+      "ipc": 0.817,
+      "cpi": 1.225,
+      "icache_hit_rate": 0.9466,
+      "dcache_hit_rate": 0.9634,
+      "l2_hit_rate": 0.986,
+      "avg_power": 9413.4,
+      "peak_power": 12237.5,
+      "sim_time_ms": 61274.5,
+      "sim_cycles": 49019607,
+      "sim_insts": 40030267,
+      "sim_seconds": 61.27451,
+      "total_energy": 576803495.41,
+      "energy_per_inst": 14.4092
+    }
+  },
+  {
+    "voltage": 1.2,
+    "frequency": 800,
+    "workload": "mixed_workload",
+    "metrics": {
+      "ipc": 0.852,
+      "cpi": 1.174,
+      "icache_hit_rate": 0.9481,
+      "dcache_hit_rate": 0.9492,
+      "l2_hit_rate": 0.9902,
+      "avg_power": 9819.2,
+      "peak_power": 12764.9,
+      "sim_time_ms": 59523.8,
+      "sim_cycles": 47619047,
+      "sim_insts": 40563697,
+      "sim_seconds": 59.52381,
+      "total_energy": 584474386.58,
+      "energy_per_inst": 14.4088
+    }
+  },
+  {
+    "voltage": 1.2,
+    "frequency": 800,
+    "workload": "idle_scenario",
+    "metrics": {
+      "ipc": 0.454,
+      "cpi": 2.201,
+      "icache_hit_rate": 0.9306,
+      "dcache_hit_rate": 0.9467,
+      "l2_hit_rate": 0.9828,
+      "avg_power": 5239.7,
+      "peak_power": 6811.6,
+      "sim_time_ms": 113636.4,
+      "sim_cycles": 90909090,
+      "sim_insts": 41301103,
+      "sim_seconds": 113.636364,
+      "total_energy": 595417706.27,
+      "energy_per_inst": 14.4165
+    }
+  },
+  {
+    "voltage": 1.2,
+    "frequency": 800,
+    "workload": "stress_test",
+    "metrics": {
+      "ipc": 0.937,
+      "cpi": 1.067,
+      "icache_hit_rate": 0.9644,
+      "dcache_hit_rate": 0.9577,
+      "l2_hit_rate": 0.9866,
+      "avg_power": 10802.8,
+      "peak_power": 14043.6,
+      "sim_time_ms": 55803.6,
+      "sim_cycles": 44642857,
+      "sim_insts": 41840263,
+      "sim_seconds": 55.803571,
+      "total_energy": 602834610.96,
+      "energy_per_inst": 14.408
+    }
+  }
+]
