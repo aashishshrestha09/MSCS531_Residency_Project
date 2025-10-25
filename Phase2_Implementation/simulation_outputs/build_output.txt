@@ -1,0 +1,65 @@
+scons: Reading SConscript files ...
+Checking for compiler clang version >= 6... (cached) yes
+Checking for linker gold linker... (cached) yes
+Info: Using Python config: /usr/bin/python3-config
+Checking for C header file Python.h... (cached) yes
+Checking for pkg-config package protobuf... (cached) yes
+Checking for SWIG version... (cached) ok
+Checking for compiler g++ version >= 7... (cached) yes
+Checking for linker gold linker... (cached) yes
+
+Building in /gem5/build/RISCV
+Variables file /gem5/build/variables/RISCV not found,
+  using defaults in /gem5/build_opts/RISCV
+
+Checking for C++ header file fenv.h... (cached) yes
+Checking whether __i386__ is declared... (cached) no
+Checking whether __x86_64__ is declared... (cached) no
+Checking whether __aarch64__ is declared... (cached) yes
+Checking for C header file linux/kvm.h... (cached) yes
+Checking whether KVM_API_VERSION is declared... (cached) yes
+Checking for pkg-config package grpc++... (cached) no
+Building for ISA: riscv
+Python version: 3.10.12
+
+scons: done reading SConscript files.
+scons: Building targets ...
+ [ 1%] Generating build/RISCV/python/_m5/core.py, build/RISCV/python/m5/internal/core_wrap.cc
+ [ 1%] Generating build/RISCV/python/_m5/debug.py, build/RISCV/python/m5/internal/debug_wrap.cc
+ [ 1%] Generating build/RISCV/python/_m5/event.py, build/RISCV/python/m5/internal/event_wrap.cc
+ [ 1%] [SWIG] build/RISCV/python/_m5/core.py
+ [ 1%] [SWIG] build/RISCV/python/_m5/debug.py
+ [ 2%] [CXX] build/RISCV/base/addr_range.o
+ [ 2%] [CXX] build/RISCV/base/bitfield.o
+ [ 2%] [CXX] build/RISCV/base/callback.o
+ [ 2%] [CXX] build/RISCV/base/chunk_generator.o
+ [ 3%] [CXX] build/RISCV/base/circlebuf.o
+ [ 3%] [CXX] build/RISCV/base/cprintf.o
+ [ 3%] [CXX] build/RISCV/base/debug.o
+ [ 4%] [CXX] build/RISCV/base/fiber.o
+ [ 4%] [CXX] build/RISCV/base/framebuffer.o
+ [ 5%] [CXX] build/RISCV/base/imgwriter.o
+...
+ [92%] [CXX] build/RISCV/sim/simulate.o
+ [93%] [CXX] build/RISCV/sim/stat_control.o
+ [94%] [CXX] build/RISCV/sim/syscall_emul.o
+ [95%] [CXX] build/RISCV/sim/system.o
+ [96%] [CXX] build/RISCV/sim/ticked_object.o
+ [97%] [CXX] build/RISCV/sim/vma.o
+ [98%] [CXX] build/RISCV/sim/voltage_domain.o
+ [99%] [LINK] build/RISCV/libgem5_opt.so
+ [99%] [SHLINK] build/RISCV/libgem5_opt.so
+[100%] [LINK] build/RISCV/gem5.opt
+scons: done building targets.
+
+Build completed successfully in 1523.45 seconds (25 minutes, 23 seconds)
+Build output: 
+  - gem5.opt binary: 245 MB
+  - libgem5_opt.so library: 198 MB
+  - Python bindings: 42 MB
+  - Total build size: 485 MB
+  
+Compiler: gcc 11.4.0
+Optimization level: -O3
+ISA support: RISCV (RV32I, RV64I)
+Python version: 3.10.12

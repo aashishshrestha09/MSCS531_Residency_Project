@@ -1,0 +1,20 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.0.0.0
+gem5 compiled Oct 25 2025 10:45:23
+gem5 started Oct 25 2025 11:33:18
+gem5 executing on podman-machine-default
+command line: /gem5/build/RISCV/gem5.opt configs/example/se.py --cpu-type=MinorCPU --caches --l2cache --cmd=tests/test-progs/hello/bin/riscv/linux/hello
+
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+build/RISCV/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+build/RISCV/base/statistics.hh:280: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+      0: system.remote_gdb: listening for remote gdb on port 7000
+build/RISCV/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+build/RISCV/sim/syscall_emul.cc:1014: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning 'tests/test-progs/hello/bin/riscv/linux/hello'
+Hello world!
+Exiting @ tick 5034812 because exiting with last active thread context
+Simulated 0.005035 seconds

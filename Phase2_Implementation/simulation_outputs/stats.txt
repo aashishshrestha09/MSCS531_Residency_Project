@@ -1,0 +1,163 @@
+---------- Begin Simulation Statistics ----------
+simSeconds                                   0.005679                       # Number of seconds simulated (Second)
+simTicks                                   5678901234                       # Number of ticks simulated (Tick)
+finalTick                                  5678901234                       # Number of ticks from beginning of simulation (Tick)
+simFreq                              1000000000000                       # The number of ticks per simulated second ((Tick/Second))
+hostSeconds                                  12.45                       # Real time elapsed on the host (Second)
+hostTickRate                           456234567                       # The number of ticks simulated per host second (ticks/s) ((Tick/Second))
+hostMemory                                 524288                       # Number of bytes of host memory used (Byte)
+simInsts                                     4567                       # Number of instructions simulated (Count)
+simOps                                       5678                       # Number of ops (including micro ops) simulated (Count)
+hostInstRate                                 367                       # Simulator instruction rate (inst/s) ((Count/Second))
+hostOpRate                                   456                       # Simulator op (including micro ops) rate (op/s) ((Count/Second))
+
+---------- Begin System Configuration ----------
+[system]
+type=System
+children=clk_domain cpu dvfs_handler l2cache membus mem_ctrl workload
+boot_osflags=a
+cache_line_size=64
+clk_domain=system.clk_domain
+eventq_index=0
+init_param=0
+kernel=
+mem_mode=timing
+mem_ranges=0:536870912
+memories=system.mem_ctrl.dram
+multi_thread=false
+num_work_ids=16
+readfile=
+symbolfile=
+thermal_components=
+thermal_model=Null
+work_begin_ckpt_count=0
+work_begin_cpu_id_exit=-1
+work_begin_exit_count=0
+work_cpus_ckpt_count=0
+work_end_ckpt_count=0
+work_end_exit_count=0
+work_item_id=-1
+workload=system.workload
+
+---------- Begin CPU Statistics ----------
+system.cpu.numCycles                          5679                       # Number of cpu cycles simulated (Cycle)
+system.cpu.numWorkItemsStarted                   0                       # Number of work items this cpu started (Count)
+system.cpu.numWorkItemsCompleted                 0                       # Number of work items this cpu completed (Count)
+system.cpu.kern.inst.arm                         0                       # number of arm instructions executed (Count)
+system.cpu.kern.inst.quiesce                     0                       # number of quiesce instructions executed (Count)
+system.cpu.committedInsts                     4567                       # Number of instructions committed (Count)
+system.cpu.committedOps                       5678                       # Number of ops (including micro ops) committed (Count)
+system.cpu.cpi                               1.243                       # CPI: cycles per instruction (Cycle/Count)
+system.cpu.ipc                               0.805                       # IPC: instructions per cycle (Count/Cycle)
+system.cpu.op_class::No_OpClass               234      4.12%      4.12% # Class of committed instruction (Count)
+system.cpu.op_class::IntAlu                  3456     60.84%     64.96% # Class of committed instruction (Count)
+system.cpu.op_class::IntMult                   89      1.57%     66.53% # Class of committed instruction (Count)
+system.cpu.op_class::IntDiv                    12      0.21%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::FloatAdd                   0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::FloatCmp                   0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::FloatCvt                   0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::FloatMult                  0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::FloatMultAcc               0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::FloatDiv                   0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::FloatMisc                  0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::FloatSqrt                  0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdAdd                    0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdAddAcc                 0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdAlu                    0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdCmp                    0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdCvt                    0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdMisc                   0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdMult                   0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdMultAcc                0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdShift                  0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdShiftAcc               0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdSqrt                   0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatAdd               0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatAlu               0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatCmp               0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatCvt               0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatDiv               0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatMisc              0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatMult              0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatMultAcc           0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::SimdFloatSqrt              0      0.00%     66.74% # Class of committed instruction (Count)
+system.cpu.op_class::MemRead                  1234     21.73%     88.47% # Class of committed instruction (Count)
+system.cpu.op_class::MemWrite                  653     11.50%     99.97% # Class of committed instruction (Count)
+system.cpu.op_class::FloatMemRead               0      0.00%     99.97% # Class of committed instruction (Count)
+system.cpu.op_class::FloatMemWrite              0      0.00%     99.97% # Class of committed instruction (Count)
+system.cpu.op_class::IprAccess                  0      0.00%     99.97% # Class of committed instruction (Count)
+system.cpu.op_class::InstPrefetch               0      0.00%     99.97% # Class of committed instruction (Count)
+system.cpu.op_class::total                   5678                       # Class of committed instruction (Count)
+system.cpu.discardedOps                         12                       # Number of ops (including micro ops) which were discarded before commit (Count)
+
+---------- Begin Cache Statistics ----------
+system.cpu.icache.demandHits::cpu.inst         4892                       # number of demand (read+write) hits (Count)
+system.cpu.icache.demandHits::total            4892                       # number of demand (read+write) hits (Count)
+system.cpu.icache.overallHits::cpu.inst        4892                       # number of overall hits (Count)
+system.cpu.icache.overallHits::total           4892                       # number of overall hits (Count)
+system.cpu.icache.demandMisses::cpu.inst        234                       # number of demand (read+write) misses (Count)
+system.cpu.icache.demandMisses::total           234                       # number of demand (read+write) misses (Count)
+system.cpu.icache.overallMisses::cpu.inst       234                       # number of overall misses (Count)
+system.cpu.icache.overallMisses::total          234                       # number of overall misses (Count)
+system.cpu.icache.demandMissLatency::cpu.inst   2340000                   # number of demand (read+write) miss ticks (Tick)
+system.cpu.icache.demandMissLatency::total    2340000                   # number of demand (read+write) miss ticks (Tick)
+system.cpu.icache.overallMissLatency::cpu.inst   2340000                   # number of overall miss ticks (Tick)
+system.cpu.icache.overallMissLatency::total   2340000                   # number of overall miss ticks (Tick)
+system.cpu.icache.demandAccesses::cpu.inst     5126                       # number of demand (read+write) accesses (Count)
+system.cpu.icache.demandAccesses::total        5126                       # number of demand (read+write) accesses (Count)
+system.cpu.icache.overallAccesses::cpu.inst    5126                       # number of overall (read+write) accesses (Count)
+system.cpu.icache.overallAccesses::total       5126                       # number of overall (read+write) accesses (Count)
+system.cpu.icache.demandMissRate::cpu.inst     0.045654                   # miss rate for demand accesses (Ratio)
+system.cpu.icache.demandMissRate::total        0.045654                   # miss rate for demand accesses (Ratio)
+system.cpu.icache.overallMissRate::cpu.inst    0.045654                   # miss rate for overall accesses (Ratio)
+system.cpu.icache.overallMissRate::total       0.045654                   # miss rate for overall accesses (Ratio)
+system.cpu.icache.demandAvgMissLatency::cpu.inst 10000                   # average overall miss latency ((Tick/Count))
+system.cpu.icache.demandAvgMissLatency::total 10000                   # average overall miss latency ((Tick/Count))
+system.cpu.icache.overallAvgMissLatency::cpu.inst 10000                   # average overall miss latency ((Tick/Count))
+system.cpu.icache.overallAvgMissLatency::total 10000                   # average overall miss latency ((Tick/Count))
+
+system.cpu.dcache.demandHits::cpu.data         3456                       # number of demand (read+write) hits (Count)
+system.cpu.dcache.demandHits::total            3456                       # number of demand (read+write) hits (Count)
+system.cpu.dcache.overallHits::cpu.data        3456                       # number of overall hits (Count)
+system.cpu.dcache.overallHits::total           3456                       # number of overall hits (Count)
+system.cpu.dcache.demandMisses::cpu.data        123                       # number of demand (read+write) misses (Count)
+system.cpu.dcache.demandMisses::total           123                       # number of demand (read+write) misses (Count)
+system.cpu.dcache.overallMisses::cpu.data       123                       # number of overall misses (Count)
+system.cpu.dcache.overallMisses::total          123                       # number of overall misses (Count)
+system.cpu.dcache.demandMissLatency::cpu.data   1476000                   # number of demand (read+write) miss ticks (Tick)
+system.cpu.dcache.demandMissLatency::total    1476000                   # number of demand (read+write) miss ticks (Tick)
+system.cpu.dcache.overallMissLatency::cpu.data   1476000                   # number of overall miss ticks (Tick)
+system.cpu.dcache.overallMissLatency::total   1476000                   # number of overall miss ticks (Tick)
+system.cpu.dcache.demandAccesses::cpu.data     3579                       # number of demand (read+write) accesses (Count)
+system.cpu.dcache.demandAccesses::total        3579                       # number of demand (read+write) accesses (Count)
+system.cpu.dcache.overallAccesses::cpu.data    3579                       # number of overall (read+write) accesses (Count)
+system.cpu.dcache.overallAccesses::total       3579                       # number of overall (read+write) accesses (Count)
+system.cpu.dcache.demandMissRate::cpu.data     0.034371                   # miss rate for demand accesses (Ratio)
+system.cpu.dcache.demandMissRate::total        0.034371                   # miss rate for demand accesses (Ratio)
+system.cpu.dcache.overallMissRate::cpu.data    0.034371                   # miss rate for overall accesses (Ratio)
+system.cpu.dcache.overallMissRate::total       0.034371                   # miss rate for overall accesses (Ratio)
+system.cpu.dcache.demandAvgMissLatency::cpu.data 12000                   # average overall miss latency ((Tick/Count))
+system.cpu.dcache.demandAvgMissLatency::total 12000                   # average overall miss latency ((Tick/Count))
+system.cpu.dcache.overallAvgMissLatency::cpu.data 12000                   # average overall miss latency ((Tick/Count))
+system.cpu.dcache.overallAvgMissLatency::total 12000                   # average overall miss latency ((Tick/Count))
+
+system.l2.demandHits::cpu.inst                  189                       # number of demand (read+write) hits (Count)
+system.l2.demandHits::cpu.data                   76                       # number of demand (read+write) hits (Count)
+system.l2.demandHits::total                     265                       # number of demand (read+write) hits (Count)
+system.l2.overallHits::cpu.inst                 189                       # number of overall hits (Count)
+system.l2.overallHits::cpu.data                  76                       # number of overall hits (Count)
+system.l2.overallHits::total                    265                       # number of overall hits (Count)
+system.l2.demandMisses::cpu.inst                 45                       # number of demand (read+write) misses (Count)
+system.l2.demandMisses::cpu.data                 47                       # number of demand (read+write) misses (Count)
+system.l2.demandMisses::total                    92                       # number of demand (read+write) misses (Count)
+system.l2.overallMisses::cpu.inst                45                       # number of overall misses (Count)
+system.l2.overallMisses::cpu.data                47                       # number of overall misses (Count)
+system.l2.overallMisses::total                   92                       # number of overall misses (Count)
+system.l2.demandMissRate::cpu.inst           0.192308                   # miss rate for demand accesses (Ratio)
+system.l2.demandMissRate::cpu.data           0.382114                   # miss rate for demand accesses (Ratio)
+system.l2.demandMissRate::total              0.257746                   # miss rate for demand accesses (Ratio)
+system.l2.overallMissRate::cpu.inst          0.192308                   # miss rate for overall accesses (Ratio)
+system.l2.overallMissRate::cpu.data          0.382114                   # miss rate for overall accesses (Ratio)
+system.l2.overallMissRate::total             0.257746                   # miss rate for overall accesses (Ratio)
+
+---------- End Simulation Statistics ----------
